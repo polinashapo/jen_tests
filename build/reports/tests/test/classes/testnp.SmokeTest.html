@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - SmokeTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>SmokeTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/testnp.html">testnp</a> &gt; SmokeTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">4</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">1</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">51.010s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="calendOrderAuthorised()"></a>
+<h3 class="failures">Заказ карманного календарика: авторизованный юзер</h3>
+<span class="code">
+<pre>Element not found {button.order-delivery-switch}
+Expected: clickable: interactable and enabled
+Screenshot: file:/Users/polinam/IdeaProjects/jentests/build/reports/tests/1730905410335.0.png
+Page source: file:/Users/polinam/IdeaProjects/jentests/build/reports/tests/1730905410335.0.html
+Timeout: 10 s.
+Caused by: NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button.order-delivery-switch&quot;}
+	at app//com.codeborne.selenide.impl.WebElementSource.createElementNotFoundError(WebElementSource.java:91)
+	at app//com.codeborne.selenide.impl.ElementFinder.createElementNotFoundError(ElementFinder.java:142)
+	at app//com.codeborne.selenide.impl.WebElementSource.handleError(WebElementSource.java:143)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:127)
+	at app//com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsClickable(WebElementSource.java:173)
+	at app//com.codeborne.selenide.commands.Click.findElement(Click.java:46)
+	at app//com.codeborne.selenide.commands.Click.execute(Click.java:28)
+	at app//com.codeborne.selenide.commands.Click.execute(Click.java:21)
+	at app//com.codeborne.selenide.commands.Commands.execute(Commands.java:161)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.dispatchAndRetry(SelenideElementProxy.java:132)
+	at app//com.codeborne.selenide.impl.SelenideElementProxy.invoke(SelenideElementProxy.java:84)
+	at app/jdk.proxy3/jdk.proxy3.$Proxy18.click(Unknown Source)
+	at app//page.CheckoutPage.checkoutChoosePickUpPoint(CheckoutPage.java:19)
+	at app//testnp.SmokeTest.calendOrderAuthorised(SmokeTest.java:60)
+	at java.base@21.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at app//org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:728)
+	at app//org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at app//org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at app//org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at app//org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at app//org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base@21.0.1/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at app//org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at app//org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at app//org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at app//org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at app//org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:107)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:88)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:54)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:67)
+	at app//org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:52)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)
+	at app//org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:86)
+	at app//org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:86)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.processAllTestClasses(JUnitPlatformTestClassProcessor.java:110)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor$CollectAllTestClassesExecutor.access$000(JUnitPlatformTestClassProcessor.java:90)
+	at org.gradle.api.internal.tasks.testing.junitplatform.JUnitPlatformTestClassProcessor.stop(JUnitPlatformTestClassProcessor.java:85)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@21.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base@21.0.1/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at jdk.proxy1/jdk.proxy1.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:113)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:65)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;button.order-delivery-switch&quot;}
+  (Session info: chrome=130.0.6723.116)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.16.1', revision: '9b4c83354e'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.1', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f5668e70bf818b988ca958add469d1b9, findElement {using=css selector, value=button.order-delivery-switch}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 130.0.6723.116, chrome: {chromedriverVersion: 130.0.6723.93 (dbcf0550c05e..., userDataDir: /var/folders/91/5515_ztj4mz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64519}, networkConnectionEnabled: false, pageLoadStrategy: eager, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64519/devtoo..., se:cdpVersion: 130.0.6723.116, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: accept, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f5668e70bf818b988ca958add469d1b9
+	at java.base@21.0.1/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base@21.0.1/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base@21.0.1/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at app//org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at app//org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
+	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
+	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:70)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:44)
+	at app//com.codeborne.selenide.impl.WebElementSelector.findElement(WebElementSelector.java:33)
+	at app//com.codeborne.selenide.impl.ElementFinder.getWebElement(ElementFinder.java:122)
+	at app//com.codeborne.selenide.impl.WebElementSource.checkConditionAndReturnElement(WebElementSource.java:116)
+	... 90 more
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Method name</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="failures">Заказ карманного календарика: авторизованный юзер</td>
+<td class="failures">calendOrderAuthorised()</td>
+<td class="failures">26.774s</td>
+<td class="failures">failed</td>
+</tr>
+<tr>
+<td class="skipped">Пополнение лицевого счёта в личном кабинете</td>
+<td class="skipped">orderDisAccount()</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="success">Пополнение лицевого счёта в личном кабинете</td>
+<td class="success">orderTopUpAccount()</td>
+<td class="success">16.262s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Заказ постера: неавторизованный юзер</td>
+<td class="success">posterOrderNotAuthorized()</td>
+<td class="success">7.974s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>Browser Console: https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to parse video contentType: video/ogg; codecs=theora
+Browser Console: https://netprint.ru/auth - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://api.netprint.ru/v1/products?offset=0&amp;limit=NaN&amp;category_ids=NaN&amp;extra=facets%2Cfields&amp;view=grouped - Failed to load resource: the server responded with a status of 400 (Bad Request)
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Праздники:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Свадьба:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Дети:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Семья:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Путешествия:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Без повода:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 4:13292 Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:6847 Object
+Browser Console: https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js 0:57898 Error: Failed to lookup route: /order/profile
+    at https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js:1:25740
+Browser Console: https://netprint.ru/order/profile? 0 Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/manifest.json 0 Manifest: Line: 1, column: 1, Syntax error.
+Browser Console: https://netprint.ru/order/personal-account/ - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to parse video contentType: video/ogg; codecs=theora
+Browser Console: https://netprint.ru/auth 0 Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/auth - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://api.netprint.ru/v1/products?offset=0&amp;limit=NaN&amp;category_ids=NaN&amp;extra=facets%2Cfields&amp;view=grouped - Failed to load resource: the server responded with a status of 400 (Bad Request)
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Праздники:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Свадьба:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Дети:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Семья:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Путешествия:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 &quot;Failed to fetch products for section Без повода:&quot; Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 4:13292 Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:6847 Object
+Browser Console: https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js 0:57898 Error: Failed to lookup route: /order/profile
+    at https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js:1:25740
+Browser Console: https://netprint.ru/order/profile? - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/order/profile? - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/assets/np2016/js/common.js?v=1730893473 144:3 Uncaught TypeError: $(...).on(...) is not a function
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Failed to init or launch Analytic&quot; &quot;GTM&quot; TypeError: Cannot read properties of undefined (reading 'items')
+    at GTMAnalytics.process (https://static.photoholding.com/etc/js/analytics/GoogleTagManagerAnalytics.js:190:47)
+    at https://static.photoholding.com/etc/js/analytics/globalAnalytics.js:178:39
+    at HTMLScriptElement.f (https://static.photoholding.com/etc/core.js:1692:36)
+Browser Console: javascript 0:122 Uncaught TypeError: Cannot read properties of undefined (reading 'add')
+Browser Console: https://netprint.ru/moscow/calendars/karmannye-kalendari/16758/47054 1578:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/calendars/karmannye-kalendari/16758/47054 1578:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/calendars/karmannye-kalendari/16758/47054 1578:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Load resource: url=https://ws2.photoholding.com/ru/218/getTemplate/5f32c03401daafe84f496f75a2e583d4?blank_id=16758&amp;style_id=59953 query=&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Load resource: url=https://ws2.photoholding.com/ru/218/getTemplateMetaXML/ query=PRODUCTION_CALENDAR_POCKET&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;save&quot; &quot;Открытие макета&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;commit success&quot; 0 1
+Browser Console: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.ru.vh91rk7h6F4.O/m=client/rt=j/sv=1/d=1/ed=1/am=AACA/rs=AHpOoo-mY1mypqk4yFxq6Zk7SSfKAj9q5g/cb=gapi.loaded_0?le=scs 423 An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Your client application uses libraries for user authentication or authorization that are deprecated. See the [Migration Guide](https://developers.google.com/identity/gsi/web/guides/gis-migration) for more information.&quot;
+Browser Console: https://netprint.ru/ - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah 726 Allow attribute will take precedence over 'allowfullscreen'.
+Browser Console: https://netprint.ru/assets/np2016/js/common.js?v=1730893473 144:3 Uncaught TypeError: $(...).on(...) is not a function
+Browser Console: javascript 0:122 Uncaught TypeError: Cannot read properties of undefined (reading 'add')
+Browser Console: javascript 0:123 Uncaught TypeError: Cannot read properties of undefined (reading 'add')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339#blank_id=16599 0 Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/order/express-editor/0f1d5278f3c69d1991c24bc04773ede9?blank_id=16599&amp;style_id=79469 0 Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/order/express-editor/0f1d5278f3c69d1991c24bc04773ede9?blank_id=16599&amp;style_id=79469 - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.ru.vh91rk7h6F4.O/m=client/rt=j/sv=1/d=1/ed=1/am=AACA/rs=AHpOoo-mY1mypqk4yFxq6Zk7SSfKAj9q5g/cb=gapi.loaded_0?le=scs 423 An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Load resource: url=https://ws2.photoholding.com/ru/218/getTemplate/0f1d5278f3c69d1991c24bc04773ede9?blank_id=16599&amp;style_id=79469 query=&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature undefined not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;PhotoChooser: feature google not found&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;Load resource: url=https://ws2.photoholding.com/ru/218/getTemplateMetaXML/ query=PRODUCTION_POSTER&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;save&quot; &quot;Открытие макета&quot;
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 &quot;commit success&quot; 0 1
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+нояб. 06, 2024 6:02:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+нояб. 06, 2024 6:02:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+нояб. 06, 2024 6:03:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+нояб. 06, 2024 6:03:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+нояб. 06, 2024 6:03:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+нояб. 06, 2024 6:03:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version (&quot;v86&quot;) matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.2</a> at 6 нояб. 2024 г., 18:03:38</p>
+</div>
+</div>
+</body>
+</html>

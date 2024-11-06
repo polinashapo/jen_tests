@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testnp.SmokeTest" tests="3" skipped="1" failures="0" errors="0" timestamp="2024-11-06T15:06:01" hostname="Mac-mini-Polina.local" time="19.412">
+  <properties/>
+  <testcase name="Пополнение лицевого счёта в личном кабинете" classname="testnp.SmokeTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="Пополнение лицевого счёта в личном кабинете" classname="testnp.SmokeTest" time="10.267"/>
+  <testcase name="Заказ постера: неавторизованный юзер" classname="testnp.SmokeTest" time="9.144"/>
+  <system-out><![CDATA[Browser Console: https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to parse video contentType: video/ogg; codecs=theora
+Browser Console: https://netprint.ru/auth - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://api.netprint.ru/v1/products?offset=0&limit=NaN&category_ids=NaN&extra=facets%2Cfields&view=grouped - Failed to load resource: the server responded with a status of 400 (Bad Request)
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Праздники:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Свадьба:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Дети:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Семья:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Путешествия:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:13287 "Failed to fetch products for section Без повода:" Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 4:13292 Object
+Browser Console: https://netprint.ru/_next/static/chunks/1332-416c368b325d629b.js 0:6847 Object
+Browser Console: https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js 0:57898 Error: Failed to lookup route: /order/profile
+    at https://netprint.ru/_next/static/chunks/main-65f3d6f7b75114d8.js:1:25740
+Browser Console: https://netprint.ru/order/profile? 0 Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/order/personal-account/ - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://privacy-cs.mail.ru/static/sync-loader.js 4 Failed to parse video contentType: video/ogg; codecs=theora
+Browser Console: https://netprint.ru/ - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah 726 Allow attribute will take precedence over 'allowfullscreen'.
+Browser Console: https://netprint.ru/assets/np2016/js/common.js?v=1730893473 144:3 Uncaught TypeError: $(...).on(...) is not a function
+Browser Console: javascript 0:122 Uncaught TypeError: Cannot read properties of undefined (reading 'add')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/moscow/interior/pechat-na-plakatah-i-posterah/16599/91339 1643:77 Uncaught TypeError: Cannot read properties of null (reading 'innerText')
+Browser Console: https://netprint.ru/order/express-editor/0f1d5278f3c69d1991c24bc04773ede9?blank_id=16599&style_id=79469 - Error while trying to use the following icon from the Manifest: https://flocktory.s3.amazonaws.com/system/site/logotype/0/0/536/logo_netprint.png (Download error or resource isn't a valid image)
+Browser Console: https://apis.google.com/_/scs/abc-static/_/js/k=gapi.lb.ru.vh91rk7h6F4.O/m=client/rt=j/sv=1/d=1/ed=1/am=AACA/rs=AHpOoo-mY1mypqk4yFxq6Zk7SSfKAj9q5g/cb=gapi.loaded_0?le=scs 423 An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing.
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "Load resource: url=https://ws2.photoholding.com/ru/218/getTemplate/0f1d5278f3c69d1991c24bc04773ede9?blank_id=16599&style_id=79469 query="
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature undefined not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature google not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature undefined not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature google not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature undefined not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature google not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature undefined not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "PhotoChooser: feature google not found"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "Load resource: url=https://ws2.photoholding.com/ru/218/getTemplateMetaXML/ query=PRODUCTION_POSTER"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "save" "Открытие макета"
+Browser Console: https://static.photoholding.com/etc/libs/sentry/bundle.min.js 1:14498 "commit success" 0 1
+]]></system-out>
+  <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+нояб. 06, 2024 6:06:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+нояб. 06, 2024 6:06:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+нояб. 06, 2024 6:06:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 130
+нояб. 06, 2024 6:06:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 130.0.6723.116. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.16.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+</testsuite>
